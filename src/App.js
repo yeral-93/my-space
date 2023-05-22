@@ -1,9 +1,10 @@
-import TextSpace from './components/textSpace/TextSpace';
+import Home from "./components/home/Home";
+
 
 function App() {
   return (
     <div>
-     <TextSpace/>
+     <Home/>
     </div>
   );
 }
