@@ -1,0 +1,32 @@
+.link_Home {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 830px;
+    height: 96px;
+    left: 705px;
+    top: 40px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+  
+  ul {
+    padding: 0px 130px 0px 0px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: flex-end;
+    list-style: none;
+    color: white;
+    li {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+      color: white;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
