@@ -1,6 +1,5 @@
 import React from "react";
 import './styleExplore.scss'
-
 const Explore = () => {
   return (
     <div className="Container">

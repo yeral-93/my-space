@@ -1,24 +1,27 @@
-@import 'globalStyle';
+@import "../../globalstyled/globalStyle.scss";
 
-.Information_Space{
-    display: flex;
-    flex-direction: column;
-color: $color_FontWhite;
-    h4{
-      font-family: $font_Subtitle;
-      font-size: $size_SubTitle;
-      font-weight: 400;
-    }
+.Information_Space {
+  display: flex;
+  flex-direction: column;
+  color: $color_FontWhite;
+  position: relative;
+  top: 200px;
+  left: -600px;
+  h4 {
+    font-family: $font_Subtitle;
+    font-size: $size_SubTitle;
+    font-weight: 400;
+  }
 
-    h1{
-        font-family: $font_Title;
-        font-size: $size_Title;
-        font-weight: 400;
-        line-height: 172px;
-    }
+  h1 {
+    font-family: $font_Title;
+    font-size: $size_Title;
+    font-weight: 400;
+    line-height: 172px;
+  }
 
-    p{
-        font-family: $font_Parrafo;
-        font-size: $font_Parrafo;
-    }
+  p {
+    font-family: $font_Parrafo;
+    font-size: $font_Parrafo;
+  }
 }
