@@ -28,7 +28,7 @@ export const NavigationBar = () => {
             <NavLink to= {`/${link.link}`} className={ ({isActive, isPending}) => isPending? "navlink": isActive? "navlink active": "navlink"
              }
             >
-              {link.id} {link.name}
+             <strong>{link.id}</strong> {link.name}
             </NavLink>
           </li>
         ))}
