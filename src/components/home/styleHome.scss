@@ -1,18 +1,21 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  background-image: url(../../assets/Image20230519155010.png);
-  background-repeat: no-repeat;
-  padding-left: 55px;
-  padding-top: 64px;
-}
-.home__Main {
-  display: flex;
-  gap: 391px;
-  align-items: end;
-  padding-top: 150px;
+@media (min-width: 1300px ) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(../../assets/Image20230519155010.png);
+    background-repeat: no-repeat;
+    padding-left: 55px;
+    padding-top: 64px;
+  }
+  .home__Main {
+    display: flex;
+    gap: 391px;
+    align-items: end;
+    padding-top: 150px;
+  }
 }
