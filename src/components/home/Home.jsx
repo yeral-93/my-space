@@ -7,8 +7,10 @@ const Home = () => {
   return (
     <div>
       <Layout/>
+      <div className="home__Main">
       <TextSpace />
       <Explore/>
+      </div>
     </div>
   );
 };

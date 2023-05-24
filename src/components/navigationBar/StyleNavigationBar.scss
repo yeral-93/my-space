@@ -16,12 +16,13 @@
 
   ul {
     display: flex;
+    gap: 50px;
     align-items: center;
     list-style: none;
     color: $color_FontWhite;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
-    padding: 40px 123px;
+    padding: 40px 110px 0px 80px;
     font-family: $font_Subtitle;
   }
 }
@@ -29,10 +30,11 @@
   display: flex;
   text-decoration: none;
   color: $color_FontWhite;
-  min-width: 150px;
+  gap: 20px;
+  height: 100%;
+  padding-bottom: 40px;
 }
 .active {
   border-bottom: 2px solid $color_FontWhite;
   color: $color_FontWhite;
-  padding: 10px;
 }
