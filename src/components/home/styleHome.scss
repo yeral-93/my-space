@@ -7,15 +7,15 @@
   }
   
   body {
-    background-image: url(../../assets/desktop/home_background.png);
+    background-image: url(../../assets/background_desktop/home_background.png);
     background-repeat: no-repeat;
     padding-left: 55px;
     padding-top: 64px;
   }
   .home__Main {
     display: flex;
-    gap: 391px;
-    align-items: end;
-    padding-top: 150px;
+    justify-content: space-around;
+    padding-top: 165px;
+    align-items:flex-end;
   }
 }
