@@ -34,7 +34,10 @@
   height: 100%;
   padding-bottom: 40px;
 }
-.active {
+.navlink:hover {
   border-bottom: 2px solid $color_FontWhite;
+}
+.active {
+  border-bottom: 2px solid $lilac-color;
   color: $color_FontWhite;
 }
