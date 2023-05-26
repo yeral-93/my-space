@@ -14,8 +14,8 @@
   }
   .home__Main {
     display: flex;
-    gap: 391px;
-    align-items: end;
-    padding-top: 150px;
+    justify-content: space-around;
+    padding-top: 165px;
+    align-items:flex-end;
   }
 }
