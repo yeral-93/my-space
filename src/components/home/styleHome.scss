@@ -20,3 +20,23 @@
   
   }
 }
+@media (min-width:768px ) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url(../../assets/background_table/background_table.png);
+    background-repeat: no-repeat;
+    padding-left: 55px;
+    padding-top: 64px;
+  }
+  .home__Main {
+    display: flex;
+    gap: 391px;
+    padding-top: 150px;
+  
+  }
+}

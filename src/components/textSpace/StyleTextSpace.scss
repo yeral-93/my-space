@@ -22,6 +22,10 @@
 
   p {
     font-family: $font_Parrafo;
-    font-size: $font_Parrafo;
+    font-size: $size_Parrafo;
+    line-height: 32px;
+    font-weight: 400;
+    width:444px;
+    text-align: justify;
   }
 }

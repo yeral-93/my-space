@@ -1,4 +1,6 @@
+@import "../../globalstyled/globalStyle.scss";
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
 
 .Container{
     background-color: white;
@@ -8,16 +10,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 300px;
+    right: 400px;
+    top: 432px;
+    
     
     h5{
         font-size: 36px;
         font-family:'Bellefair';
         font-weight: 400;
+        color: $dark-color;
+        
     }
 }
 .hoverExplore{
-    display: none;
+    opacity: 1;
 }
 .Container:hover .hoverExplore {
-    display: flex;
+    opacity: 0;
 }
