@@ -1,5 +1,5 @@
 import React from "react";
-import './styleExplore.scss'
+import './StyleExplore.scss'
 const Explore = () => {
   return (
     <div className="Container">
