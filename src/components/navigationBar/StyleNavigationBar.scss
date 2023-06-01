@@ -1,13 +1,13 @@
 @import "../../globalstyled/globalStyle.scss";
 
 .navbar {
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   &__Line {
-    transform: translateX(64px);
+    transform: translateX(200px);
     z-index: 3000;
+    opacity: 0.50;
   }
   figure {
     display: flex;
@@ -22,7 +22,7 @@
     color: $color_FontWhite;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(40.7742px);
-    padding: 40px 110px 0px 80px;
+    padding: 40px 180px 0px 123px;
     font-family: $font_Subtitle;
   }
 }

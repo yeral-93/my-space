@@ -1,4 +1,5 @@
 @import "../../globalstyled/globalStyle.scss";
+
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 
@@ -67,4 +68,24 @@
             
         }
     }
+
+
+.Container {
+  background-color: white;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h5 {
+    font-size: 36px;
+    font-family: $font_Title;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 2px;
+    color: #0b0d17;
+  }
+
 }
