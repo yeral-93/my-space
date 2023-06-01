@@ -1,5 +1,75 @@
 @import "../../globalstyled/globalStyle.scss";
 
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+
+@media (min-width: 1300px ) {
+    .Container{
+        background-color: white;
+        width: 274px;
+        height: 274px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        right: 400px;
+        top: 432px;
+        
+        
+        h5{
+            font-size: 36px;
+            font-family:'Bellefair';
+            font-weight: 400;
+            color: $dark-color;
+            
+        }
+    }
+    .hoverExplore{
+        visibility: visible;
+    }
+    .Container:hover .hoverExplore{
+        visibility: visible;
+    }
+}
+@media (max-width:768px ) {
+    .Container{
+        background-color: white;
+        width: 242px;
+        height: 242px;
+        right: 200px;
+        top:532px;
+        
+        
+        h5{
+            font-size: 36px;
+            font-family:'Bellefair';
+            font-weight: 400;
+            color: $dark-color;
+            
+        }
+    }
+  }
+@media (max-width:375px ){
+    .Container{
+        background-color: white;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        right: 200px;
+        top:532px;
+        
+        
+        h5{
+            font-size: 36px;
+            font-family:'Bellefair';
+            font-weight: 400;
+            color: $dark-color;
+            
+        }
+    }
+
+
 .Container {
   background-color: white;
   width: 260px;
@@ -17,4 +87,5 @@
     letter-spacing: 2px;
     color: #0b0d17;
   }
+
 }
