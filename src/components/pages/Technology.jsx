@@ -46,6 +46,9 @@ const Destination = () => {
                 <div className="article__user">
                   <img src={image.img} alt={image.title} />
                 </div>
+                <div className="article__responsive">
+                  <img src={image.responsive} alt={image.title} />
+                </div>
               </div>
             </div>
           ) : null}
