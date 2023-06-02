@@ -1,0 +1,55 @@
+@import "../../globalstyled/globalStyle.scss";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__Line {
+    transform: translateX(200px);
+    z-index: 3000;
+    opacity: 0.50;
+  }
+  figure {
+    display: flex;
+    align-items: center;
+  }
+
+  ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    list-style: none;
+    color: $color_FontWhite;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    padding: 40px 180px 0px 123px;
+    font-family: $font_Subtitle;
+  }
+}
+.navlink {
+  display: flex;
+  text-decoration: none;
+  color: $color_FontWhite;
+  gap: 20px;
+  height: 100%;
+  padding-bottom: 40px;
+}
+.active {
+  border-bottom: 2px solid $color_FontWhite;
+  color: $color_FontWhite;
+}
+
+.navlink:hover {
+  border-bottom: 2px solid $lilac-colorParrafos;
+}
+
+@media (max-width: 375px) {
+   .navbar {
+    &__Start {
+      position: relative;
+      top: -80px;
+      left: -10px;
+       width: 30px;
+    }
+   }
+}

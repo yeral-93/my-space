@@ -1,9 +1,10 @@
 import React from 'react'
+import './styleTextSpace.scss'
 
 const TextSpace = () => {
   return (
-    <div>
-        <h4>SO, YOU WANT TO TRAVEL TO</h4>
+    <div className='Information_Space'>
+        <h4 >SO, YOU WANT TO TRAVEL TO</h4>
         <h1>SPACE</h1>
       <p>
         Let’s face it; if you want to go to space, you might as well genuinely

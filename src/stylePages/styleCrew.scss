@@ -1,0 +1,100 @@
+@import "../globalstyled/globalStyle.scss";
+
+.containerCrew {
+  display: flex;
+  flex-direction: column;
+  padding: 76px 165px 0px 150px;
+
+  &__Map {
+    display: flex;
+    color: white;
+    justify-content: space-around;
+   
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+  }
+
+  &__subtitle {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    h3 {
+      color: gray;
+      font-size: $size-destinationValues;
+      font-family: $font-destinationSubTitleInfo;
+      font-weight: 200;
+      line-height: 34px;
+      letter-spacing: 4.725px;
+    }
+
+    h4 {
+      font-size: $size-destinationValues;
+      font-family: $font-destinationSubTitleInfo;
+      font-weight: 200;
+      line-height: 34px;
+      letter-spacing: 4.725px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    h2 {
+      color: $color_FontWhite;
+      font-size: $size-crewRol;
+      font-family: $font-crewName;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+
+    h1{
+        text-transform: uppercase;
+       font-size: $size-crewName; 
+       font-family: $font-crewName;
+       font-weight: 400;
+       padding-bottom: 27px;
+    }
+
+    p{
+        font-size: $size_Parrafo;
+        font-family: $font_Parrafo;
+        color: #D0D6F9;
+        width: 444px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+  }
+
+  &__button{
+    display: flex;
+    gap: 24px;
+
+    button{
+        background-color: #9c9999;
+        width: 15px;
+        height: 15px;
+        border-radius: 50px;
+        border: none;
+        
+      }
+  }
+
+  &__image{
+    display: flex;
+    
+}
+}
+
+.containerCrew__button button.activeCrew{
+  background-color: white;
+}
