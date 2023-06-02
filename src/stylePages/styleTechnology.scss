@@ -1,10 +1,98 @@
+@import "../globalstyled/globalStyle.scss";
+
 .article {
-    color: white;
-    &__tittle {
-        display: flex;
-        gap: 24px;
+  display: flex;
+  justify-content: center;
+  margin-left: 250px;
+  flex-direction: column;
+  &__link {
+    display: flex;
+    flex-direction: column;
+  }
+  &__navigation {
+    display: flex;
+    padding-top: 10px;
+    flex-direction: column;
+    width: 50px;
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      border: 2px solid #2a2b35;
+      background-color: transparent;
+      padding: 35px;
+      color: white;
+      font-family: $size-technologyNumber;
+      font-size: $size-technologyNumber;
     }
+  }
+  &__tittle {
+    display: flex;
+    gap: 24px;
+  }
   &__container {
     display: flex;
+  }
+  &__indice {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    h2 {
+      color: #4c4d55;
+      font-family: $font-technologyTterminology;
+      font-weight: 900;
+      font-size: $size_SubTitle;
+    }
+    h3 {
+      font-family: $font_Subtitle;
+      font-size: $size_SubTitle;
+      color: white;
+    }
+  }
+
+  &__data {
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    h6 {
+      font-family: $font-technologyTterminology;
+      font-size: $size-technologyTerminology;
+      padding-top: 11px;
+      color: $lilac-colorParrafos;
+      line-height: 19px;
+      letter-spacing: 2.7px;
+      font-weight: 400;
+    }
+    h1 {
+      font-family: $size-technologyNumber;
+      font-size: $size-technologyNumber;
+      font-weight: 400;
+      color: white;
+    }
+    p {
+      font-family: $font_Parrafo;
+      font-size: $size_Parrafo;
+      font-weight: 400;
+      width: 69%;
+      padding-top: 17px;
+      color: $lilac-colorParrafos;
+      line-height: 32px;
+    }
+  }
+  &__cuerpo {
+    display: flex;
+    align-items: center;
+  }
+  &__user {
+    display: flex;
+    gap: 108px;
+    width: 90%;
+    img {
+      width: 400px;
+    }
   }
 }
