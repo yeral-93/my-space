@@ -1,0 +1,81 @@
+.DivDestination {
+  background-image: url(../../../assets/background_desktop/destiantion_background.png);
+  color: white;
+  padding: 100px 164px 0px 210px;
+
+  &__body {
+    display: flex;
+    justify-content: space-around;
+    gap: 157px;
+  }
+
+  &__titleAndImg {
+    display: flex;
+    flex-direction: column;
+    gap: 97px;
+  }
+
+  &__title {
+    display: flex;
+    gap: 20px;
+
+    h3 {
+      font-size: 28px;
+    }
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__paragraph {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 100px;
+    }
+
+    p {
+      font-size: 18px;
+      width: 78%;
+      line-height: 32px;
+      font-weight: 400;
+      padding: 0px 0px 54px 0px;
+    }
+
+    hr{
+        width: 444px;
+        height: 1px;
+    }
+  }
+
+  &__paragraph1 {
+    display: flex;
+    padding: 28px 0px 0px 0px;
+    gap: 125px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      h5 {
+        font-size: 14px;
+        letter-spacing: 2.3625px;
+        line-height: 17px;
+        text-transform: uppercase;
+        font-weight: 400;
+      }
+
+      h4 {
+        font-size: 28px;
+        line-height: 32px;
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
