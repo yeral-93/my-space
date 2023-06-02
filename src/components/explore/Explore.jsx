@@ -4,10 +4,10 @@ import exploreHover from "../../assets/icons/explore_hover.png";
 const Explore = () => {
   return (
     <>
-    <img src={exploreHover} className= "hoverExplore"alt="sombra" />
-    <div className="Container">
-        <h5>EXPLORE</h5>
-    </div>
+      <div className="container">        
+          <img src={exploreHover} className="hoverExplore" alt="sombra" />
+          <h5>EXPLORE</h5>
+      </div>
     </>
    
   );
