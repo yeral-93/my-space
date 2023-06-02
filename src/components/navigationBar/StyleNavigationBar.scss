@@ -42,3 +42,14 @@
 .navlink:hover {
   border-bottom: 2px solid $lilac-colorParrafos;
 }
+
+@media (max-width: 375px) {
+   .navbar {
+    &__Start {
+      position: relative;
+      top: -80px;
+      left: -10px;
+       width: 30px;
+    }
+   }
+}
