@@ -1,0 +1,10 @@
+.article {
+    color: white;
+    &__tittle {
+        display: flex;
+        gap: 24px;
+    }
+  &__container {
+    display: flex;
+  }
+}
