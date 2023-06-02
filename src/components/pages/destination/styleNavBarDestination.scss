@@ -1,0 +1,16 @@
+.divLinksDestination{
+    display: flex;
+    gap: 30px;
+    padding: 80px 0px 0px 0px;
+
+    ul{
+        display: flex;
+        list-style: none;
+
+        li{
+            list-style: none;
+            text-decoration: none;
+        }
+        
+    }
+}
