@@ -1,66 +1,68 @@
 import React, { useEffect, useState } from "react";
-import "../../stylePages/styleTechnology.scss";
 import { get } from "../../services/ApiSpace";
+import "../../stylePages/styleTechnology.scss";
 
-const Destination = () => {
+const Technology = () => {
   const [tech, setTech] = useState([]);
-  const [selectedId, setSelectedId] = useState(null);
+  const [selectedButton, setSelectedButton] = useState(""); // Inicialmente sin valor
 
   const getLinks = async () => {
     const getlink = await get("technology");
     setTech(getlink);
+    setSelectedButton(getlink[0]?.id); // Establecer el primer botón como seleccionado
   };
 
   useEffect(() => {
     getLinks();
-    console.log(tech);
   }, []);
 
-  const handleClick = (id) => {
-    setSelectedId(id);
+  const handleButtonSelect = (buttonNumber) => {
+    setSelectedButton(buttonNumber);
   };
 
+  const selectedTech = tech.find((link) => link.id === selectedButton);
+
   return (
-    <article className="article">
-      {tech.map((image) => (
-        <div className="article__link" key={image.id}>
-          <div className="article__navigation">
-            <span key={image.id} onClick={() => handleClick(image.id)}>
-              {image.id}
-            </span>
-          </div>
-          {selectedId === image.id ? (
-            <div className="article__information">
-              <div className="article__indice">
-                <h2>03</h2>
-                <h3>{image.tittle}</h3>
-              </div>
-              <div className="article__cuerpo">
-                <div className="article__container">
-                  <div className="article__data">
-                    <h6>{image.sub_tittle}</h6>
-                    <h1>{image.info_techology_t}</h1>
-                    <p>{image.info_techology_p}</p>
-                  </div>
-                </div>
-                <div className="article__user">
-                  <img src={image.img} alt={image.title} />
-                </div>
-                <div className="article__responsive">
-                  <img src={image.responsive} alt={image.title} />
-                </div>
-              </div>
-            </div>
-          ) : null}
-          {/* <div className="article__tittle">
-            <h2>03</h2>
-            <h2>{image.tittle}</h2>
-          </div>
-            <img src={image.img} alt={image.title} /> */}
+    <div className="containerTechnology">
+      <div className="containerTechnology__subtitle">
+        <h3>03</h3>
+        <h4>SPACE LAUNCH 101</h4>
+      </div>
+      <div className="containerTechnology__map">
+        <div className="containerTechnology__button">
+          {tech.map((link) => (
+            <button
+              key={link.id}
+              
+              onClick={() => handleButtonSelect(link.id)}
+              className={selectedButton === link.id ? "activetechno" : ""}
+            >
+              {link.id}
+            </button>
+          ))}
         </div>
-      ))}
-    </article>
+        {selectedTech && (
+          <div className="containerTechnology__paragraph">
+            <h6>{selectedTech.sub_tittle}</h6>
+            <h1>{selectedTech.info_techology_t}</h1>
+            <p>{selectedTech.info_techology_p}</p>
+          </div>
+        )}
+        {selectedTech && (
+          <div className="containerTechnology__img">
+            <figure>
+              <img
+                src={selectedTech.img}
+                alt={selectedTech.info_techology_t}
+              />
+            </figure>
+          </div>
+        )}
+      </div>
+    </div>
   );
 };
 
-export default Destination;
+export default Technology;
+
+

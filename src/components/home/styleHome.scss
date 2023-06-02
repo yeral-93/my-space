@@ -1,5 +1,5 @@
 
-@media (min-width: 1300px ) {
+@media (min-width: 1246px ) {
   * {
     margin: 0;
     padding: 0;
@@ -14,8 +14,7 @@
   }
   .home__Main {
     display: flex;
-
-    gap: 391px;
+    justify-content: space-around;
     align-items: end;
     padding-top: 150px;
   
