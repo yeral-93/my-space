@@ -3,6 +3,7 @@ import TextSpace from "../textSpace/TextSpace";
 import "./styleHome.scss";
 import Explore from "../explore/Explore";
 
+
 const Home = () => {
   return (
     <div>

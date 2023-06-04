@@ -4,6 +4,8 @@ import { get } from "../../services/ApiSpace";
 import Star from "../../assets/layout/start.png";
 import Line from "../../assets/layout/RectanglePño.png";
 import "./styleNavigationBar.scss";
+import Hamburger from "../../assets/icons/icon-hamburguer.jpeg"
+import Close from "../../assets/icons/icon-close.jpeg";
 export const NavigationBar = () => {
   const [users, handleUsers] = useState([]);
   const getLinks = async () => {
@@ -21,6 +23,10 @@ export const NavigationBar = () => {
       <figure>
         <img className="navbar__Start" src={Star} alt="estrella" />
         <img className="navbar__Line" src={Line} alt="Linea" />
+      </figure>
+      <figure>
+        <img className="navbar__hamburguer" src={Hamburger} alt="menu hamburgesa" />
+        <img className="navbar__close" src={Close} alt="close" />
       </figure>
       <ul>
         {users.map((link) => (

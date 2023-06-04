@@ -1,5 +1,5 @@
 
-@media (min-width: 1246px ) {
+@media screen and (min-width: 1246px ) {
   * {
     margin: 0;
     padding: 0;
@@ -20,6 +20,20 @@
   
   }
 }
+@media (min-width:769px ) {
+  body {
+    background-image: url(../../assets/background_desktop/home_background.png);
+  }
+  .home__Main {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 150px;
+    background-color: rgb(249, 71, 71);
+  
+  }
+  
+}
 @media (max-width:768px ) {
   * {
     margin: 0;
@@ -30,13 +44,14 @@
   body {
     background-image: url(../../assets/background_table/background_table.png);
     background-repeat: no-repeat;
-    padding-left: 55px;
-    padding-top: 64px;
+    background-color: rgb(1, 7, 38);
+    // padding-left: 5px;
+    // padding-top: 64px;
   }
   .home__Main {
     display: flex;
-    gap: 391px;
-    padding-top: 150px;
+    // gap: 391px;
+    // padding-top: 150px;
   
   }
 }
