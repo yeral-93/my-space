@@ -13,7 +13,7 @@ export const NavigationBar = () => {
 
   useEffect(() => {
     getLinks();
-    console.log(users)
+    console.log(users);
   }, []);
 
   return (
@@ -25,10 +25,13 @@ export const NavigationBar = () => {
       <ul>
         {users.map((link) => (
           <li key={link.id}>
-            <NavLink to= {`/${link.link}`} className={ ({isActive, isPending}) => isPending? "navlink": isActive? "navlink active": "navlink"
-             }
+            <NavLink
+              to={`/${link.link}`}
+              className={({ isActive, isPending }) =>
+                isPending ? "navlink" : isActive ? "navlink active" : "navlink"
+              }
             >
-             <strong>{link.id}</strong> {link.name}
+              <strong>{link.id}</strong> {link.name}
             </NavLink>
           </li>
         ))}

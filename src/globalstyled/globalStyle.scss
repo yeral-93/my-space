@@ -1,11 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
-$size_Title:150px;
-$font_Title: 'Bellefair', serif;;
-$size_SubTitle:28px;
-$size_Parrafo:18px;
-$font_Subtitle: 'Barlow Condensed', sans-serif;;
-$font_Parrafo:'Barlow', sans-serif;;
+
 $color_FontWhite: #FFFFFF;
 $font_circle:32px;
+
+$dark-color: #0B0D17;
+$lilac-colorParrafos: #D0D6F9;
+$font-navText: "Barlow Condensed";
+
+$font_Title:"Bellefair";
+$font_Subtitle: "Barlow Condensed";
+$size_SubTitle:28px;
+$font_Parrafo:"Barlow";
+$size_Parrafo:18px;
+
+$size-homeTitle: 150px;
+
+$size-destinationTitle: 100px;
+$size-destinationValues: 28px;
+$font-destinationValues: "Bellefair";
+$size-destinationSubTitleInfo: 14px;
+$font-destinationSubTitleInfo: "Barlow Condensed";
+$size-destinationObtions: 16px;
+$font-destinationObtions: "Barlow Condensed";
+
+$size-crewTitle: 56px;
+$size-crewRol: 32px;
+$font-crewName: "Bellefair";
+$size-crewName: 56px;
+
+$size-technologyTitle: 32px;
+$size-technologyTerminology: 16px;
+$font-technologyTterminology: "Barlow Condensed";
+$size-technologyNumber: 32px;
+$font-technologyNumber: "Bellefair";
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $size_Title:150px;
+// $font_Title: 'Bellefair', serif;;
+// $size_SubTitle:28px;
+// $size_Parrafo:18px;
+// $font_Subtitle: 'Barlow Condensed', sans-serif;;
+// $font_Parrafo:'Barlow', sans-serif;;
+// $color_FontWhite: #FFFFFF;
+// $font_circle:32px;

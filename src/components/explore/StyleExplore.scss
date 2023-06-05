@@ -1,20 +1,100 @@
 @import "../../globalstyled/globalStyle.scss";
 
-.Container {
-  background-color: white;
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  h5 {
-    font-size: 36px;
-    font-family: $font_Title;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 37px;
-    letter-spacing: 2px;
-    color: #0b0d17;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+
+@media (min-width: 1300px) {
+    .container {
+        background-color: white;
+        width: 274px;
+        height: 274px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+        .hoverExplore{
+            visibility: hidden;
+            position: absolute;
+            right: -90px;
+        }
+
+        &:hover {
+            .hoverExplore {
+                visibility: visible;
+            }
+        }
+
+        h5 {
+            font-size: 36px;
+            font-family: 'Bellefair';
+            font-weight: 400;
+            color: $dark-color;
+            z-index: 5;
+        }
+        
+
+
+    }
+
+    @media (max-width:768px) {
+        .container {
+            background-color: white;
+            width: 242px;
+            height: 242px;
+            right: 200px;
+            top: 532px;
+
+
+            h5 {
+                font-size: 36px;
+                font-family: 'Bellefair';
+                font-weight: 400;
+                color: $dark-color;
+            }
+        }
+    }
+
+    @media (max-width:375px) {
+        .container {
+            background-color: white;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            right: 200px;
+            top: 532px;
+
+
+            h5 {
+                font-size: 36px;
+                font-family: 'Bellefair';
+                font-weight: 400;
+                color: $dark-color;
+
+            }
+        }
+
+
+        .container {
+            background-color: white;
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h5 {
+                font-size: 36px;
+                font-family: $font_Title;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 37px;
+                letter-spacing: 2px;
+                color: #0b0d17;
+            }
+
+        }
+    }
 }

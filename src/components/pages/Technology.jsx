@@ -1,47 +1,68 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { get } from "../../services/ApiSpace";
 import "../../stylePages/styleTechnology.scss";
-import { NavLink } from "react-router-dom";
+
 const Technology = () => {
-  const [tech, handletech] = useState([]);
+  const [tech, setTech] = useState([]);
+  const [selectedButton, setSelectedButton] = useState(""); // Inicialmente sin valor
+
   const getLinks = async () => {
     const getlink = await get("technology");
-    handletech(getlink);
+    setTech(getlink);
+    setSelectedButton(getlink[0]?.id); // Establecer el primer botón como seleccionado
   };
 
   useEffect(() => {
     getLinks();
-    console.log(tech);
   }, []);
 
+  const handleButtonSelect = (buttonNumber) => {
+    setSelectedButton(buttonNumber);
+  };
+
+  const selectedTech = tech.find((link) => link.id === selectedButton);
+
   return (
-    <article className="article">
-      {tech.map((image) => (
-        <div key={image.id}>
-          <div className="article__tittle">
-            <h2>03</h2>
-            <h2>{image.tittle}</h2>
-          </div>
-          <div className="article__container">
-          <li key={image.id}>
-            <NavLink to= {`/${image.id}`} className={ ({isActive, isPending}) => isPending? "navlink": isActive? "navlink active": "navlink"
-             }
+    <div className="containerTechnology">
+      <div className="containerTechnology__subtitle">
+        <h3>03</h3>
+        <h4>SPACE LAUNCH 101</h4>
+      </div>
+      <div className="containerTechnology__map">
+        <div className="containerTechnology__button">
+          {tech.map((link) => (
+            <button
+              key={link.id}
+              
+              onClick={() => handleButtonSelect(link.id)}
+              className={selectedButton === link.id ? "activetechno" : ""}
             >
-             <strong>{image.id}</strong> {image.name}
-            </NavLink>
-          </li>
-            <div className="article__information">
-              <h3>{image.sub_tittle}</h3>
-              <h1>{image.info_techology_t}</h1>
-              <p>{image.info_techology_p}</p>
-            </div>
-            <img src={image.img} alt={image.title} />
-          </div>
+              {link.id}
+            </button>
+          ))}
         </div>
-      ))}
-      
-    </article>
+        {selectedTech && (
+          <div className="containerTechnology__paragraph">
+            <h6>{selectedTech.sub_tittle}</h6>
+            <h1>{selectedTech.info_techology_t}</h1>
+            <p>{selectedTech.info_techology_p}</p>
+          </div>
+        )}
+        {selectedTech && (
+          <div className="containerTechnology__img">
+            <figure>
+              <img
+                src={selectedTech.img}
+                alt={selectedTech.info_techology_t}
+              />
+            </figure>
+          </div>
+        )}
+      </div>
+    </div>
   );
 };
 
 export default Technology;
+
+
