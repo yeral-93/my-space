@@ -1,5 +1,5 @@
 import React from 'react'
-import './StyleTextSpace.scss'
+import './styleTextSpace.scss'
 
 const TextSpace = () => {
   return (
