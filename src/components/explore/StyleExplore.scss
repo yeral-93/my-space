@@ -57,20 +57,21 @@
             background-color: white;
             width: 260px;
             height: 260px;
-            border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-left: -300px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
 
             h5 {
-                font-size: 36px;
-                font-family: $font_Title;
-                font-style: normal;
+                font-size: 16px;
                 font-weight: 400;
                 line-height: 37px;
                 letter-spacing: 2px;
                 color: #0b0d17;
+                top: 10px;
+                left: 110px;
             }
 
         }

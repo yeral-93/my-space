@@ -4,11 +4,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   &__Line {
     transform: translateX(200px);
     z-index: 3000;
     opacity: 0.5;
   }
+
   figure {
     display: flex;
     align-items: center;
@@ -26,6 +28,7 @@
     font-family: $font_Subtitle;
   }
 }
+
 .navlink {
   display: flex;
   text-decoration: none;
@@ -34,6 +37,7 @@
   height: 100%;
   padding-bottom: 40px;
 }
+
 .active {
   border-bottom: 2px solid $color_FontWhite;
   color: $color_FontWhite;
@@ -42,29 +46,35 @@
 .navlink:hover {
   border-bottom: 2px solid $lilac-colorParrafos;
 }
+
 .navbar__hamburguer {
   display: none;
 }
+
 .navbar__close {
   display: none;
 }
+
 @media (max-width: 768px) {
   .navbar {
     background-color: black;
     display: flex;
     justify-content: start;
+
     &__Start {
       position: relative;
       top: -80px;
       width: 48px;
       left: 180px;
     }
+
     &__Line {
       transform: translateX(-15px);
       z-index: 3000;
       opacity: 0.5;
     }
   }
+
   ul {
     display: flex;
     flex-direction: column;
@@ -78,36 +88,45 @@
     font-family: $font_Subtitle;
   }
 }
+
 @media (max-width: 375px) {
   .navbar {
     background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: start;
+
     &__Line {
       visibility: hidden;
     }
+
     &__Start {
       position: relative;
       top: -60px;
       width: 40px;
       left: 55px;
     }
+
     &__close {
       display: flex;
       width: 50px;
       z-index: 3000;
       position: absolute;
-      top: 10px;
-      left: 10px;
+      top: 5px;
+      left: 324px;
+      // visibility: hidden;
     }
+
     &__hamburguer {
       display: flex;
       width: 50px;
       z-index: 3000;
       position: absolute;
+      top: 5px;
+      left: 324px;
     }
   }
+
   ul {
     display: flex;
     flex-direction: column;
@@ -121,5 +140,13 @@
     height: 100%;
     position: absolute;
     z-index: 1000;
+    visibility: hidden;
+  }
+
+  .ocultar {
+    visibility: hidden;
+  }
+  .mostrar {
+    visibility: visible;
   }
 }

@@ -30,36 +30,22 @@ export const NavigationBar = () => {
         <img className="navbar__Line" src={Line} alt="Linea" />
       </figure>
       <figure>
-        <img
+        <img 
+          style={{ visibility: isMenuOpen ? "hidden" : 'visible' }}
           className="navbar__hamburguer"
           src={Hamburger}
           alt="menu hamburgesa"
           onClick={toggleMenu}
         />
         <img
+         style={{ visibility: isMenuOpen ? "visible" : 'hidden' }}
           className="navbar__close"
           src={Close}
           alt="close"
           onClick={toggleMenu}
         />
-
-        {isMenuOpen ? (
-          <img
-            className="navbar__close"
-            src={Close}
-            alt="close"
-            onClick={toggleMenu}
-          />
-        ) : (
-          <img
-            className="navbar__hamburguer"
-            src={Hamburger}
-            alt="menu hamburguesa"
-            onClick={toggleMenu}
-          />
-        )}
       </figure>
-      <ul className={isMenuOpen ? "menu-open" : ""} onClick={toggleMenu}>
+      <ul style={{ visibility: isMenuOpen ? "visible" : 'hidden' }}>
         {users.map((link) => (
           <li key={link.id}>
             <NavLink
