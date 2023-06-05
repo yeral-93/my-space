@@ -4,9 +4,9 @@ import { get } from "../../services/ApiSpace";
 import Star from "../../assets/layout/start.png";
 import Line from "../../assets/layout/RectanglePño.png";
 import "./styleNavigationBar.scss";
-import Hamburger from "../../assets/icons/icon-hamburguer.jpeg"
-import Close from "../../assets/icons/icon-close.jpeg";
-import close2 from "../../assets/icons/close2.jpg"
+import Hamburger from "../../assets/icons/icon-hamburguer.png";
+import Close from "../../assets/icons/icon-close.svg";
+
 export const NavigationBar = () => {
   const [users, handleUsers] = useState([]);
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -30,10 +30,20 @@ export const NavigationBar = () => {
         <img className="navbar__Line" src={Line} alt="Linea" />
       </figure>
       <figure>
-        {/* <img className="navbar__hamburguer" src={Hamburger} alt="menu hamburgesa" onClick={toggleMenu}/>
-        <img className="navbar__close" src={Close} alt="close" onClick={toggleMenu}/>
-        <img className="navbar__close" src={close2} alt="close" onClick={toggleMenu}/> */}
-      {isMenuOpen ? (
+        <img
+          className="navbar__hamburguer"
+          src={Hamburger}
+          alt="menu hamburgesa"
+          onClick={toggleMenu}
+        />
+        <img
+          className="navbar__close"
+          src={Close}
+          alt="close"
+          onClick={toggleMenu}
+        />
+
+        {isMenuOpen ? (
           <img
             className="navbar__close"
             src={Close}
