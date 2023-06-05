@@ -14,7 +14,7 @@ export const NavigationBar = () => {
   useEffect(() => {
     getLinks();
     console.log(users);
-  }, []);
+  }, [users]);
 
   return (
     <nav className="navbar">
