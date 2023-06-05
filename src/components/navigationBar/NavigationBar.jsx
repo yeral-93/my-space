@@ -21,6 +21,19 @@ export const NavigationBar = () => {
   useEffect(() => {
     getLinks();
     console.log(users);
+
+    const handleResize = () => {
+      if (window.innerWidth <= 375) {
+        document.addEventListener("click", toggleMenu);
+      } else {
+        document.removeEventListener("click", toggleMenu);
+      }
+    };
+
+    handleResize(); // Call it initially
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
@@ -31,21 +44,18 @@ export const NavigationBar = () => {
       </figure>
       <figure>
         <img 
-          style={{ visibility: isMenuOpen ? "hidden" : 'visible' }}
           className="navbar__hamburguer"
           src={Hamburger}
           alt="menu hamburgesa"
           onClick={toggleMenu}
         />
         <img
-         style={{ visibility: isMenuOpen ? "visible" : 'hidden' }}
           className="navbar__close"
           src={Close}
           alt="close"
           onClick={toggleMenu}
         />
       </figure>
-      <ul style={{ visibility: isMenuOpen ? "visible" : 'hidden' }}>
         {users.map((link) => (
           <li key={link.id}>
             <NavLink
