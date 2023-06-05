@@ -2,13 +2,10 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "../components/layout/Layout";
 import Home from "../components/home/Home";
-<<<<<<< HEAD
-import Destination from "../components/pages/Destination";
-import  Crew  from "../components/pages/Crew"
-=======
+
 import Destination from "../components/pages/destination/Destination";
 import { Crew } from "../components/pages/Crew"
->>>>>>> 81d5cf9beb86416df2e464eb100fe2afed85dee9
+
 import Technology from "../components/pages/Technology";
 
 const AppRoutes = () => {
