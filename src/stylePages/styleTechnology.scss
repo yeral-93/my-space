@@ -51,7 +51,7 @@
       font-size: $size-technologyNumber;
       font-weight: 400;
       font-family: $font-technologyNumber;
-      border: solid 1px #D0D6F9;
+      border: solid 1px #d0d6f9;
     }
   }
 
@@ -61,23 +61,23 @@
     padding-top: 100px;
     gap: 17px;
 
-    h6{
-      font-size:$size-technologyTerminology;
-      font-family:$font-technologyTterminology;
+    h6 {
+      font-size: $size-technologyTerminology;
+      font-family: $font-technologyTterminology;
       font-weight: 400;
       letter-spacing: 2.7px;
       color: $lilac-colorParrafos;
       text-transform: uppercase;
     }
 
-    h1{
+    h1 {
       font-size: 56px;
-      font-family:$font-technologyNumber;
+      font-family: $font-technologyNumber;
       line-height: 64px;
       font-weight: 400;
     }
 
-    p{
+    p {
       font-size: 18px;
       font-family: $font_Parrafo;
       font-weight: 400;
@@ -87,7 +87,7 @@
     }
   }
 
-  &__img{
+  &__img {
     width: 600px;
     padding: 0px 0px 50px 0px;
   }
@@ -101,20 +101,19 @@
   color: black;
 }
 
-
 @media (max-width: 768px) {
   .containerTechnology {
     display: flex;
-  
     &__subtitle {
       display: flex;
       position: absolute;
       top: 200px;
       left: 50px;
-
     }
-    &__user {
-      display: none;
+    &__noresponsive {
+      img {
+        display: none;
+      }
     }
     &__responsive {
       display: flex;
@@ -131,38 +130,32 @@
       position: absolute;
       z-index: 500;
       top: 500px;
-      right: 270px;
+      left: 250px;
     }
-    &__navigation {
-      position: relative;
-      top: 95px;
-
-    }
-    &__data {
+    &__paragraph {
+      display: flex;
       text-align: center;
-      align-items: center;
       position: absolute;
       top: 600px;
       left: 100px;
-      padding-bottom: 50px;
       p {
-        width: 510px;
+        width: 500px;
+        padding-bottom: 50px;
       }
     }
   }
 }
 
-
-@media (max-width: 376px) {
+@media (max-width: 375px) {
   .containerTechnology {
+    display: flex;
     &__subtitle {
       display: flex;
       width: 400px;
+      position: absolute;
       top: 100px;
-      left: 160px;
+      left: 60px;
       align-items: center;
-      justify-content: center;
-      padding-top: 20px;
       h3 {
         font-size: 20px;
       }
@@ -170,10 +163,8 @@
         font-size: 24px;
       }
     }
-
     &__img {
       display: flex;
-      
     }
     &__noresponsive {
       img {
@@ -183,10 +174,10 @@
     &__responsive {
       display: flex;
       position: absolute;
-      top: 180px;
+      top: 140px;
       left: 0px;
       img {
-        width: 765px;
+        width: 375px;
       }
     }
     &__button {
@@ -194,22 +185,21 @@
       flex-direction: row;
       gap: 30px;
       position: absolute;
-      top: 400px;
-      left: 250px;
-      width: 400px;
+      top: 200px;
+      left: 60px;
     }
     &__paragraph {
       display: flex;
       text-align: center;
       position: absolute;
-      top: 560px;
-      left: 170px;
-     
+      top: 360px;
+      left: 20px;
+      padding-top: 50px;
       h1 {
         font-size: 35px;
       }
       p {
-        width: 400px;
+        width: 340px;
       }
     }
   }
