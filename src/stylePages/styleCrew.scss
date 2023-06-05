@@ -192,60 +192,59 @@
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
   .containerCrew {
-    padding-top: 0px;
+   
+
+    &__Map{
+      flex-direction: column-reverse;
+      padding-left: 150px;
+    }
    
 
     &__subtitle {
-      margin-top: 88px;
-      margin-left: 115px;
-      width: 253px;
-      margin-bottom: 32px;
-    
+     position: absolute;
+      margin-left: 170px;
+      margin-top: -630px;
 
       h3 {
-        font-size: 16px;
+        font-size: 24px;
         letter-spacing: 2.7px;
       }
 
       h4 {
-        font-size: 16px;
+        font-size: 24px;
         letter-spacing: 2.7px;
+        width: 200px;
       }
     }
 
-    &__image {
-      margin-top: 40px;
-      order: 1;
-      img {
-        height: 222px;
-        width: 177.12342834472656px;
-        left: 98.6240234375px;
-        top: 139px;
-        border-radius: 0px;
-      }
+    &__image{
+      margin-left: -80px;
     }
+
     &__button {
-      margin-left: 166px;
-      justify-content: center;
-      order: 2;
+   position: absolute;
+   right: -120px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+    
     }
     &__paragraph {
-      margin-top: 30px;
-      margin-left: 148px;
-      order: 3;
-   
+     position: absolute;
+     margin-top: 100px;
+    right: -300px;
+
       h2{
-        font-size: 16px;
+        font-size: 25px;
       }
       h1{
-        font-size: 24px;
+        font-size: 30px;
       }
       p{
-        Width:327px;
-        Height:100px;
-        font-size: 15px;
+        Width:527px;
+        font-size: 26px;
+        line-height: 50px;
       }
   }
   }

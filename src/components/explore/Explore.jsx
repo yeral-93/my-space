@@ -1,6 +1,6 @@
 import React from "react";
 
-import './StyleExplore.scss'
+import './styleExplore.scss'
 import exploreHover from "../../assets/icons/explore_hover.png";
 
 const Explore = () => {
