@@ -24,6 +24,7 @@
     backdrop-filter: blur(40.7742px);
     padding: 40px 180px 0px 123px;
     font-family: $font_Subtitle;
+    font-size: 16px;
   }
 }
 .navlink {
@@ -43,6 +44,28 @@
   border-bottom: 2px solid $lilac-colorParrafos;
 }
 
+<<<<<<< HEAD
+@media (max-width:768px ){
+  .navbar{
+    padding: 20px 0px 0px 20px;
+    ul{
+      padding: 40px 72px 0px 40px;
+      position: absolute;
+      margin-left: 160px;
+     font-size: 14px;
+    }
+    &__Line{
+      display: none;
+    }
+  }
+}
+
+@media (max-width:375px ){
+.navbar__Line{
+  display: none;
+}
+}
+=======
 @media (max-width: 375px) {
    .navbar {
     &__Start {
@@ -53,3 +76,4 @@
     }
    }
 }
+>>>>>>> 33e31f61dcfaa85365eb4e88ee810b77a00c887e
