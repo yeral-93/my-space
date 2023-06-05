@@ -9,13 +9,14 @@
     display: flex;
     color: white;
     justify-content: space-around;
-   
+
   }
 
   &__information {
     display: flex;
     flex-direction: column;
     gap: 140px;
+    width: 50%;
   }
 
   &__subtitle {
@@ -63,38 +64,188 @@
        font-family: $font-crewName;
        font-weight: 400;
        padding-bottom: 27px;
+       white-space: nowrap;
+
     }
 
-    p{
-        font-size: $size_Parrafo;
-        font-family: $font_Parrafo;
-        color: #D0D6F9;
-        width: 444px;
-        font-weight: 400;
-        line-height: 32px;
+    p {
+      font-size: $size_Parrafo;
+      font-family: $font_Parrafo;
+      color: #D0D6F9;
+      width: 444px;
+      font-weight: 400;
+      line-height: 32px;
     }
   }
 
-  &__button{
+  &__button {
     display: flex;
     gap: 24px;
 
-    button{
-        background-color: #9c9999;
-        width: 15px;
-        height: 15px;
-        border-radius: 50px;
-        border: none;
-        
-      }
+    button {
+      background-color: #9c9999;
+      width: 15px;
+      height: 15px;
+      border-radius: 50px;
+      border: none;
+
+    }
   }
 
-  &__image{
+  &__image {
     display: flex;
+
+    width: 50%;
     
 }
+
 }
 
-.containerCrew__button button.activeCrew{
+.containerCrew__button button.activeCrew {
   background-color: white;
+}
+
+@media (max-width: 768px) {
+
+  .containerCrew {
+    padding: 76px 0px 0px;
+    &__subtitle {
+      display: flex;
+      justify-content: left;
+      margin-left: 33px;
+
+      h4 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+    }
+
+    &__Map {
+      width: 50%;
+      flex-direction: column;
+    }
+
+    &__paragraph {
+      margin-top: 30px;
+      margin-left: 176px;
+
+      h2 {
+        align-self: center;
+        font-size: 24px;
+        font-weight: 400;
+      }
+
+      h1 {
+        align-self: center;
+        order: 1;
+        padding: 0px;
+        font-size: 40px;
+      }
+
+      p {
+        text-align: center;
+        align-self: center;
+        order: 3;
+        width: 458px;
+        height: 84px;
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+
+    &__information {
+      width: 140%;
+      gap: 40px;
+      display: flex;
+
+    }
+
+    &__button {
+      margin-left: 176px;
+      justify-content: center;
+      order: 4;
+
+      button {
+        height: 10px;
+        width: 10px;
+        left: 392px;
+        top: 442px;
+        margin-top: 10px;
+
+      }
+    }
+
+    &__image {
+      margin-top: 40px;
+      order: 5;
+
+      img {
+        width: 456.37px;
+        height: 572px;
+        margin-left: 155.85px;
+
+      }
+
+    }
+  }
+}
+
+@media (max-width: 376px) {
+  .containerCrew {
+   
+
+    &__Map{
+      flex-direction: column-reverse;
+      padding-left: 150px;
+    }
+   
+
+    &__subtitle {
+     position: absolute;
+      margin-left: 170px;
+      margin-top: -630px;
+
+      h3 {
+        font-size: 24px;
+        letter-spacing: 2.7px;
+      }
+
+      h4 {
+        font-size: 24px;
+        letter-spacing: 2.7px;
+        width: 200px;
+      }
+    }
+
+    &__image{
+      margin-left: -80px;
+    }
+
+    &__button {
+   position: absolute;
+   right: -120px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+    
+    }
+    &__paragraph {
+     position: absolute;
+     margin-top: 100px;
+    right: -300px;
+
+      h2{
+        font-size: 25px;
+      }
+      h1{
+        font-size: 30px;
+      }
+      p{
+        Width:527px;
+        font-size: 26px;
+        line-height: 50px;
+      }
+  }
+  }
 }
