@@ -221,11 +221,19 @@
   }
 }
 
-@media (max-width:375px ){
+
+@media (max-width:376px ){
  
 .DivDestination{
 
+  &__title{
+    margin-left: 130px;
+    width: 400px;
+  }
+
   &__titleAndImg{
+    
+
 
     img{
       width: 300px;
@@ -237,6 +245,11 @@
 
   &__title{
     // padding-top: 80px;
+    justify-content: center;
+  }
+
+
+  &__body{
     justify-content: center;
   }
 

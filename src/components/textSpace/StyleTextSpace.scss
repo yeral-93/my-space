@@ -42,3 +42,20 @@
 
   }
 }
+
+@media (max-width:768px ) {
+  .Information_Space {
+    p{
+      text-align: center;
+      width: 444px;
+    }
+  }
+}
+@media (max-width:376px ) {
+  .Information_Space {
+    p{
+      width: 400px;
+      margin-left: 25px;
+    }
+  }
+}

@@ -48,10 +48,12 @@
   .navbar{
     padding: 20px 0px 0px 20px;
     ul{
-      padding: 40px 72px 0px 40px;
+
+      padding: 40px 72px 0px 63px;
       position: absolute;
       margin-left: 160px;
      font-size: 14px;
+
     }
     &__Line{
       display: none;
@@ -64,13 +66,13 @@
   display: none;
 }
 }
-@media (max-width: 375px) {
-   .navbar {
-    &__Start {
-      position: relative;
-      top: -80px;
-      left: -10px;
-       width: 30px;
-    }
-   }
-}
+// @media (max-width: 375px) {
+//    .navbar {
+//     &__Start {
+//       position: relative;
+//       top: -80px;
+//       left: -10px;
+//        width: 30px;
+//     }
+//    }
+// }
