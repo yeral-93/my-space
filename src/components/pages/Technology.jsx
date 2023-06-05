@@ -33,6 +33,7 @@ const Technology = () => {
           {tech.map((link) => (
             <button
               key={link.id}
+              
               onClick={() => handleButtonSelect(link.id)}
               className={selectedButton === link.id ? "activetechno" : ""}
             >
@@ -49,17 +50,12 @@ const Technology = () => {
         )}
         {selectedTech && (
           <div className="containerTechnology__img">
-            <figure className="containerTechnology__noresponsive">
-              <img src={selectedTech.img} alt={selectedTech.info_techology_t} />
+            <figure>
+              <img
+                src={selectedTech.img}
+                alt={selectedTech.info_techology_t}
+              />
             </figure>
-            <div className="containerTechnology__responsive">
-              <figure>
-                <img
-                  src={selectedTech.responsive}
-                  alt={selectedTech.info_techology_t}
-                />
-              </figure>
-            </div>
           </div>
         )}
       </div>
@@ -68,3 +64,5 @@ const Technology = () => {
 };
 
 export default Technology;
+
+

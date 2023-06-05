@@ -51,7 +51,7 @@
       font-size: $size-technologyNumber;
       font-weight: 400;
       font-family: $font-technologyNumber;
-      border: solid 1px #d0d6f9;
+      border: solid 1px #D0D6F9;
     }
   }
 
@@ -61,23 +61,23 @@
     padding-top: 100px;
     gap: 17px;
 
-    h6 {
-      font-size: $size-technologyTerminology;
-      font-family: $font-technologyTterminology;
+    h6{
+      font-size:$size-technologyTerminology;
+      font-family:$font-technologyTterminology;
       font-weight: 400;
       letter-spacing: 2.7px;
       color: $lilac-colorParrafos;
       text-transform: uppercase;
     }
 
-    h1 {
+    h1{
       font-size: 56px;
-      font-family: $font-technologyNumber;
+      font-family:$font-technologyNumber;
       line-height: 64px;
       font-weight: 400;
     }
 
-    p {
+    p{
       font-size: 18px;
       font-family: $font_Parrafo;
       font-weight: 400;
@@ -87,7 +87,7 @@
     }
   }
 
-  &__img {
+  &__img{
     width: 600px;
     padding: 0px 0px 50px 0px;
   }
@@ -96,109 +96,57 @@
   }
 }
 
-.containerTechnology__button button.activetechno {
-  background-color: white;
-  color: black;
-}
-
 @media (max-width: 375px) {
-  .containerTechnology {
+  .article {
     display: flex;
-    &__subtitle {
-      display: flex;
-      width: 400px;
-      position: absolute;
-      top: 100px;
-      left: 60px;
-      align-items: center;
-      h3 {
-        font-size: 20px;
-      }
-      h4 {
-        font-size: 24px;
-      }
+    flex-direction: row;
+    gap: 30px;
+    &__navigation {
+      position: relative;
+      left: -150px;
     }
-    &__img {
-      display: flex;
-    }
-    &__noresponsive {
-      img {
-        display: none;
-      }
+    &__user {
+      display: none;
     }
     &__responsive {
       display: flex;
-      position: absolute;
-      top: 140px;
-      left: 0px;
       img {
+        position: absolute;
+        top: 110px;
+        left: 2px;
         width: 375px;
       }
     }
-    &__button {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
+    &__indice {
       position: absolute;
-      top: 200px;
-      left: 60px;
+      top: 60px;
+      left: 80px;
     }
-    &__paragraph {
-      display: flex;
+    &__navigation {
+      position: relative;
+      top: 95px;
+
+    }
+    &__data {
       text-align: center;
+      align-items: center;
       position: absolute;
-      top: 360px;
-      left: 20px;
-      padding-top: 50px;
+      top: 320px;
+      left: 5px;
+      h6 {
+        width: 300px;
+      }
       h1 {
-        font-size: 35px;
+        width: 400px;
       }
       p {
-        width: 340px;
+        width: 300px;
       }
     }
   }
 }
 
-@media (max-width: 768px) {
-  .containerTechnology {
-    display: flex;
-    &__subtitle {
-      display: flex;
-      position: absolute;
-      top: 200px;
-      left: 50px;
-    }
-    &__noresponsive {
-      img {
-        display: none;
-      }
-    }
-    &__responsive {
-      display: flex;
-      position: absolute;
-      top: 270px;
-      left: 0px;
-      img {
-        width: 768px;
-      }
-    }
-    &__button {
-      display: flex;
-      flex-direction: row;
-      position: absolute;
-      z-index: 500;
-      top: 500px;
-    }
-    &__paragraph {
-      display: flex;
-      text-align: center;
-      position: absolute;
-      top: 600px;
-      left: 100px;
-      p {
-        width: 500px;
-      }
-    }
-  }
+.containerTechnology__button button.activetechno{
+  background-color: white;
+  color: black;
 }
