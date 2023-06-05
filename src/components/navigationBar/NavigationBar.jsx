@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { get } from "../../services/ApiSpace";
 import Star from "../../assets/layout/start.png";
 import Line from "../../assets/layout/RectanglePño.png";
-import "./styleNavigationBar.scss";
+import "./StyleNavigationBar.scss";
 export const NavigationBar = () => {
   const [users, handleUsers] = useState([]);
   const getLinks = async () => {
