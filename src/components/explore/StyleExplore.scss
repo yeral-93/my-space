@@ -1,5 +1,4 @@
 @import "../../globalstyled/globalStyle.scss";
-
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 
@@ -37,18 +36,15 @@
 
 
     }
-
     @media (max-width:768px) {
         .container {
             background-color: white;
             width: 242px;
             height: 242px;
             right: 200px;
-            top: 532px;
-
-
+            top: 52px;
             h5 {
-                font-size: 36px;
+                font-size: 32px;
                 font-family: 'Bellefair';
                 font-weight: 400;
                 color: $dark-color;
@@ -59,31 +55,13 @@
     @media (max-width:375px) {
         .container {
             background-color: white;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            right: 200px;
-            top: 532px;
-
-
-            h5 {
-                font-size: 36px;
-                font-family: 'Bellefair';
-                font-weight: 400;
-                color: $dark-color;
-
-            }
-        }
-
-
-        .container {
-            background-color: white;
             width: 260px;
             height: 260px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-left: -300px;
 
             h5 {
                 font-size: 36px;

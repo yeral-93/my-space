@@ -6,8 +6,13 @@ import Line from "../../assets/layout/RectanglePño.png";
 import "./styleNavigationBar.scss";
 import Hamburger from "../../assets/icons/icon-hamburguer.jpeg"
 import Close from "../../assets/icons/icon-close.jpeg";
+import close2 from "../../assets/icons/close2.jpg"
 export const NavigationBar = () => {
   const [users, handleUsers] = useState([]);
+  const [isMenuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
   const getLinks = async () => {
     const getlink = await get("principal_navBar");
     handleUsers(getlink);
@@ -25,10 +30,26 @@ export const NavigationBar = () => {
         <img className="navbar__Line" src={Line} alt="Linea" />
       </figure>
       <figure>
-        <img className="navbar__hamburguer" src={Hamburger} alt="menu hamburgesa" />
-        <img className="navbar__close" src={Close} alt="close" />
+        {/* <img className="navbar__hamburguer" src={Hamburger} alt="menu hamburgesa" onClick={toggleMenu}/>
+        <img className="navbar__close" src={Close} alt="close" onClick={toggleMenu}/>
+        <img className="navbar__close" src={close2} alt="close" onClick={toggleMenu}/> */}
+      {isMenuOpen ? (
+          <img
+            className="navbar__close"
+            src={Close}
+            alt="close"
+            onClick={toggleMenu}
+          />
+        ) : (
+          <img
+            className="navbar__hamburguer"
+            src={Hamburger}
+            alt="menu hamburguesa"
+            onClick={toggleMenu}
+          />
+        )}
       </figure>
-      <ul>
+      <ul className={isMenuOpen ? "menu-open" : ""} onClick={toggleMenu}>
         {users.map((link) => (
           <li key={link.id}>
             <NavLink
@@ -36,6 +57,7 @@ export const NavigationBar = () => {
               className={({ isActive, isPending }) =>
                 isPending ? "navlink" : isActive ? "navlink active" : "navlink"
               }
+              onClick={toggleMenu}
             >
               <strong>{link.id}</strong> {link.name}
             </NavLink>

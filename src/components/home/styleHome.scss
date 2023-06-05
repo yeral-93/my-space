@@ -28,11 +28,8 @@
     display: flex;
     justify-content:center;
     align-items: center;
-    padding-top: 150px;
-    background-color: rgb(249, 71, 71);
-  
+    padding-top: 100px;
   }
-  
 }
 @media (max-width:768px ) {
   * {
@@ -44,7 +41,6 @@
   body {
     background-image: url(../../assets/background_table/background_table.png);
     background-repeat: no-repeat;
-    background-color: rgb(1, 7, 38);
     // padding-left: 5px;
     // padding-top: 64px;
   }
@@ -52,7 +48,6 @@
     display: flex;
     // gap: 391px;
     // padding-top: 150px;
-  
   }
 }
 @media (max-width:375px ) {
@@ -70,12 +65,9 @@
   }
   .home__Main {
     display: flex;
-    gap: 391px;
-    padding-top: 150px;
-  
-
+    gap: 91px;
     justify-content: space-around;
-    padding-top: 165px;
-    align-items:flex-end;
+    padding-top: 65px;
+    align-items:center;
   }
 }
