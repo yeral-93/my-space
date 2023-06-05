@@ -15,10 +15,9 @@
   .home__Main {
     display: flex;
     justify-content: space-around;
-    // align-items: end;
     padding-top: 250px;
     align-items: flex-end;
-  
+
   }
 
 @media (max-width:768px ) {
@@ -46,6 +45,7 @@
 @media (max-width:376px ) {
   .home__Main{
     margin-left: 400px;
+
   }
  
 }

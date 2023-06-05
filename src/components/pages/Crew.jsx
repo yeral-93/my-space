@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import "../../stylePages/styleCrew.scss";
 import { get } from "../../services/ApiSpace";
@@ -48,7 +49,7 @@ export const Crew = () => {
           </figure>
         </div>
       </div>
-    </div>
-  );
-};
+      </div>
+    )}
 
+export default Crew;

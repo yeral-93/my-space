@@ -51,7 +51,7 @@
       font-size: $size-technologyNumber;
       font-weight: 400;
       font-family: $font-technologyNumber;
-      border: solid 1px #d0d6f9;
+      border: solid 1px #D0D6F9;
     }
   }
 
@@ -61,23 +61,23 @@
     padding-top: 100px;
     gap: 17px;
 
-    h6 {
-      font-size: $size-technologyTerminology;
-      font-family: $font-technologyTterminology;
+    h6{
+      font-size:$size-technologyTerminology;
+      font-family:$font-technologyTterminology;
       font-weight: 400;
       letter-spacing: 2.7px;
       color: $lilac-colorParrafos;
       text-transform: uppercase;
     }
 
-    h1 {
+    h1{
       font-size: 56px;
-      font-family: $font-technologyNumber;
+      font-family:$font-technologyNumber;
       line-height: 64px;
       font-weight: 400;
     }
 
-    p {
+    p{
       font-size: 18px;
       font-family: $font_Parrafo;
       font-weight: 400;
@@ -87,7 +87,7 @@
     }
   }
 
-  &__img {
+  &__img{
     width: 600px;
     padding: 0px 0px 50px 0px;
   }
@@ -111,11 +111,10 @@
       position: absolute;
       top: 200px;
       left: 50px;
+
     }
-    &__noresponsive {
-      img {
-        display: none;
-      }
+    &__user {
+      display: none;
     }
     &__responsive {
       display: flex;
@@ -134,9 +133,14 @@
       top: 500px;
       right: 270px;
     }
-    &__paragraph {
-      display: flex;
+    &__navigation {
+      position: relative;
+      top: 95px;
+
+    }
+    &__data {
       text-align: center;
+      align-items: center;
       position: absolute;
       top: 600px;
       left: 100px;
@@ -147,6 +151,7 @@
     }
   }
 }
+
 
 @media (max-width: 376px) {
   .containerTechnology {
@@ -209,3 +214,6 @@
     }
   }
 }
+
+
+
